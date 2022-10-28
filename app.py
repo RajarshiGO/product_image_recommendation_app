@@ -10,7 +10,6 @@ import albumentations as albu
 from azure.storage.blob import BlobServiceClient
 from azure.storage.blob import StorageStreamDownloader
 import io
-os.mkdir("upload")
 blob_service = BlobServiceClient(account_name="apprecommendation", account_url = "https://apprecommendation.blob.core.windows.net", credential = "?sv=2021-06-08&ss=b&srt=sco&sp=rltf&se=2023-04-12T18:55:28Z&st=2022-10-15T11:02:28Z&spr=https&sig=LokyJVDsh6y5ka79oPh25Q0geOaD6GDjk0JDiY4qzSE%3D")
 source_container_client = blob_service.get_container_client("images")
 t = AnnoyIndex(128, 'euclidean')
