@@ -1,0 +1,2 @@
+# Image similarity based E-commerce recommendation engine
+This is a image similarity based search engine that is intended to ne used as a recommendation system in E-commerce platforms to recommend products similar to the items that the customer has already viewed. 
